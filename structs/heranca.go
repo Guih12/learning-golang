@@ -12,13 +12,13 @@ type Person struct {
 
 //modelo de herança
 type Study struct {
-	person     Person
+	Person
 	curso      string
 	university string
 }
 
 func main() {
 	person := Person{"george", "borsato", 21, 1.66}
-	study := Study{person: person, curso: "Ads", university: "UFMS"}
+	study := Study{person, "Ads", "UFMS"}
 	fmt.Println(study)
 }

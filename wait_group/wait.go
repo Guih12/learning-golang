@@ -17,7 +17,7 @@ func main() {
 	//concorrência != paralelismo
 	var waitGroup sync.WaitGroup
 
-	waitGroup.Add(2) //grupo de espera e tem duas go routines
+	waitGroup.Add(4) //grupo de espera e tem duas go routines
 
 	go func() {
 		writeDisplay("Excutando go goutine 1")
